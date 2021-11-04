@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PeergradeAgainAndAgain</name>
+    </assembly>
+    <members>
+        <member name="M:PeergradeAgainAndAgain.Controllers.MessageController.CreateRandomMessage(System.Int32)">
+            <summary>
+            Create messages using random.
+            </summary>
+            <param name="amount">amount</param>
+            <returns>messages</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.MessageController.CreateMessage(PeergradeAgainAndAgain.Models.Message)">
+            <summary>
+            Create message.
+            </summary>
+            <param name="message">message</param>
+            <returns>message</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.MessageController.GetMessagesByBothId(System.String,System.String)">
+            <summary>
+            Get message from sender to receiver.
+            </summary>
+            <param name="senderId">sender email</param>
+            <param name="receiverId">receiver email</param>
+            <returns>all messages</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.MessageController.GetMessagesBySenderId(System.String)">
+            <summary>
+            Get messages by sender id(email).
+            </summary>
+            <param name="senderId">sender id(email)</param>
+            <returns>all messages</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.MessageController.GetMessagesByRecieverId(System.String)">
+            <summary>
+            Get messages to the receiver.
+            </summary>
+            <param name="receiverId">receiver id(email)</param>
+            <returns>all messages</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.UserController.CreateUser(PeergradeAgainAndAgain.Models.User)">
+            <summary>
+             Create user
+            </summary>
+            <param name="user">user</param>
+            <returns>result</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.UserController.GetUserByEmail(System.String)">
+            <summary>
+            Get user according to its email.
+            </summary>
+            <param name="email"> email</param>
+            <returns>user info</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.UserController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+            Get all users
+            </summary>
+            <param name="limit">amount of users</param>
+            <param name="offset">start posotion</param>
+            <returns>information about all users</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Controllers.UserController.CreateRandomUser(System.Int32)">
+            <summary>
+            Create user using random 
+            </summary>
+            <param name="amount">amount</param>
+            <returns>users</returns>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.Message.Subject">
+            <summary>
+            Subject.
+            </summary>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.Message.Messages">
+            <summary>
+            Messages.
+            </summary>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.Message.SenderId">
+            <summary>
+            SenderId
+            </summary>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.Message.ReceiverId">
+            <summary>
+            ReceiverId
+            </summary>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.Message.RandomItem(System.Boolean)">
+            <summary>
+            Get random subject or message.
+            </summary>
+            <param name="subjectOrNot">true - create subject, false - create message</param>
+            <returns>subject or message.</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.Message.RandomId(System.String)">
+            <summary>
+            Get random id(email).
+            </summary>
+            <param name="email">exaption number</param>
+            <returns>id(email)</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.Message.GetMessages(System.String,System.String)">
+            <summary>
+            Get all messages from sender to receiver.
+            </summary>
+            <param name="senderId">sender email</param>
+            <param name="receiverId">receiver email</param>
+            <returns>list with all messages</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.Message.GetMessages(System.String,System.Boolean)">
+            <summary>
+            Get all meseges from specific sender ot to specific receiver.
+            </summary>
+            <param name="id">id(email)</param>
+            <param name="senderOrNot">true - from sender, false - from receiver.</param>
+            <returns>list with all messages</returns>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.User.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:PeergradeAgainAndAgain.Models.User.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.User.FindUser(System.String)">
+            <summary>
+            Check if such email had been already registrate.
+            </summary>
+            <param name="user">user email</param>
+            <returns>true - exists, false - doesn't exist </returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.User.RandomName">
+            <summary>
+            Get random name.
+            </summary>
+            <returns>name</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Models.User.RandomEmail">
+            <summary>
+            Get random email.
+            </summary>
+            <returns>email</returns>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Program.Serialization">
+            <summary>
+            Serialization
+            </summary>
+        </member>
+        <member name="M:PeergradeAgainAndAgain.Program.Deserialization">
+            <summary>
+            Deserialization
+            </summary>
+        </member>
+    </members>
+</doc>
